@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class Question_2 {
     public static void main(String[] args) {
+
         // Q-2) Get Nth Fibonacci number
 
         Scanner in = new Scanner(System.in);
