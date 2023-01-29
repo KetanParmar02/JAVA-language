@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class Question_3 {
     public static void main(String[] args) {
+
         // Q-3). Find Given Character is Capital OR Small.
 
         Scanner in = new Scanner(System.in);
