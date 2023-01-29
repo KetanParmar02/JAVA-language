@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class Question_5 {
     public static void main(String[] args) {
+
         // Q-5). Count particular digit in number
 
         Scanner in = new Scanner(System.in);
