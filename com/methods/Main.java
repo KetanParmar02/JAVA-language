@@ -26,7 +26,6 @@ public class Main {
         int ans = num1+num2;
         System.out.println("The sum of two number is= "+ans);
     }
-
     // return the value
     static int sum2(){
         Scanner in = new Scanner(System.in);
