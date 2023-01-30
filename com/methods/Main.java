@@ -6,6 +6,14 @@ public class Main {
     public static void main(String[] args) {
         sum();
     }
+    /*
+            syntax of methods:-
+         --------------------------
+         return_type name(){
+                // body
+                return statement;
+         }
+     */
     static void sum(){
         Scanner in = new Scanner(System.in);
         System.out.print("Enter num1:- ");
