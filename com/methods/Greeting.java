@@ -4,13 +4,18 @@ import java.util.Scanner;
 
 public class Greeting {
     public static void main(String[] args) {
-        greet();
+//        greet();
+//
+//        String name = greet2();
+//        System.out.println("My name is "+name);
+//
+//        String message = greet3("Ketan");
+//        System.out.println(message);
 
-        String name = greet2();
-        System.out.println("My name is "+name);
+        String name1 = "Ketan Parmar";
+        changename(name1);
+        System.out.println("My name is "+name1);
 
-        String message = greet3("Ketan");
-        System.out.println(message);
     }
 
     static void greet(){
@@ -37,6 +42,9 @@ public class Greeting {
         return "Hello "+name;
     }
 
-    // in JAVA only ** pass by the copy of that reference variable **
+    // in JAVA only ** passing value of the reference variable **
     // not the pass by the reference
+    static void changename(String name){
+        name = "Rahul rana";      // here creating the new object not change the name value
+    }
 }
