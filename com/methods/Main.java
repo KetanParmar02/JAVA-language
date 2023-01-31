@@ -11,6 +11,13 @@ public class Main {
 
         int ans1 = sum3(23,467);
         System.out.println("The sum of two number is= "+ans1);
+
+        int a = 10;
+        int b = 20;
+
+        swap(a,b);
+
+        System.out.println(a+" "+b);
     }
     /*
             syntax of methods:-
@@ -47,4 +54,9 @@ public class Main {
     }
 
     // swap the value
+    static void swap(int a, int b){
+        int temp = a;
+        a = b;
+        b = temp;
+    }
 }
