@@ -36,4 +36,7 @@ public class Greeting {
     static String greet3(String name){
         return "Hello "+name;
     }
+
+    // in JAVA only ** pass by the copy of that reference variable **
+    // not the pass by the reference
 }
