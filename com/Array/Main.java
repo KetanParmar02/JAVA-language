@@ -1,29 +1,44 @@
 package com.Array;
 
+import java.util.Arrays;
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        // Q: store a roll number
-        int a = 19;
+        /*
+        Array:- Basically array is collection of same data item
 
-        // Q: store a person's name
-        String name = "Kunal Kushwaha";
+              syntax:-
+              data_type[] variable_name = new data_type[size];
+         */
 
-        // Q: store 5 roll numbers
-        int rno1 = 23;
-        int rno2 = 55;
-        int rno3 = 18;
+        int[] arr = new int[5];
+        // or
+        int[] arr1; // declaration of array. arr is getting defined in the stack.
+        arr1 = new int[3]; // actually here object is being created in the memory(heap).
 
-        // syntax
-        // datatype[] variable_name = new datatype[size];
-        // store 5 roll numbers:
-//        int[] rnos = new int[5];
-//        // or directly
-//        int[] rnos2 = {23, 12, 45, 32, 15};
+        String[] name = new String[5];
 
-        int[] ros; // declaration of array. ros is getting defined in the stack
-        ros = new int[5]; // initialisation: actually here object is being created in the memory (heap)
+        Scanner in = new Scanner(System.in);
+        System.out.print("Enter the name:- ");
 
-        String[] name1 = new String[5];
+        for (int i = 0; i < name.length; i++) {
+            name[i] = in.next();
+        }
 
+        // print name using for loop
+//        for (int i = 0; i < name.length; i++) {
+//            System.out.print(name[i]+" ");
+//        }
+
+        // print name array using for-each loop
+//        for (String ans: name) {
+//            System.out.print(ans+" ");
+//        }
+
+        // print name array using Array.toString method
+        System.out.println(Arrays.toString(name));
+        name[3] = "xyz";
+        System.out.println(Arrays.toString(name));
     }
 }
