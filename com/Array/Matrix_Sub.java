@@ -82,7 +82,7 @@ public class Matrix_Sub {
             }
         }else {
             System.out.println("Matrix size is not same..");
-            System.out.println("So, Matrix Sum is not possible....");
+            System.out.println("So, Matrix Subtraction is not possible....");
         }
     }
 }
