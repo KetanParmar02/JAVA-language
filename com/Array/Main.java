@@ -36,9 +36,17 @@ public class Main {
 //            System.out.print(ans+" ");
 //        }
 
-        // print name array using Array.toString method
+//      print name array using Array.toString method
         System.out.println(Arrays.toString(name));
         name[3] = "xyz";
         System.out.println(Arrays.toString(name));
+
+        int[] marks = new int[3];
+
+        System.out.print("Generated Random marks:- ");
+        for (int i = 0; i < marks.length; i++) {
+            marks[i] = (int) (Math.random()*100);
+        }
+        System.out.println(Arrays.toString(marks));
     }
 }
