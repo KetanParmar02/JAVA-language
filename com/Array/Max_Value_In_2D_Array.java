@@ -52,7 +52,6 @@ public class Max_Value_In_2D_Array {
         }
 
     */
-
         return Max_value;
     }
 
