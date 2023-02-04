@@ -69,7 +69,7 @@ public class Matrix_Multiplication {
 
         // now we check if row and column size is equal then and then matrix sum is possible
         if (C1 == R2){
-            int[][] ans = new int[R1][C1];
+            int[][] ans = new int[R1][C2];
             System.out.println("Matrix of Two Sum= ");
 
             for (int row = 0; row < ans.length; row++) {
