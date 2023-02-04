@@ -1,6 +1,5 @@
 package com.Array;
 
-import javax.print.AttributeException;
 import java.util.Arrays;
 import java.util.Scanner;
 
