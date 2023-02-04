@@ -44,7 +44,7 @@ public class Min_Value_In_2D_Array {
     /*
         for (float[] num : nums) {
             for (float v : num) {
-                if (v > Min_value) {
+                if (v < Min_value) {
                     Min_value = v;
                 }
             }
