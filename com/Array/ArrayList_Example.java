@@ -16,5 +16,10 @@ public class ArrayList_Example {
         list.add(7);
 
         System.out.println(list);
+
+        list.set(5,76);
+        System.out.println(list.hashCode());
+        System.out.println(list.contains(2));
+        System.out.println(list);
     }
 }
