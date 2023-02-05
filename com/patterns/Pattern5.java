@@ -10,7 +10,7 @@ public class Pattern5 {
             int totalColumn = row > n ? 2*n - row : row;
 
             for (int col = 0; col < totalColumn; col++) {
-                System.out.print(col+" ");
+                System.out.print("* ");
             }
             System.out.println();
         }
