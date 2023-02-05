@@ -1,6 +1,5 @@
 package com.Array;
 
-import java.net.SecureCacheResponse;
 import java.util.ArrayList;
 import java.util.Scanner;
 
