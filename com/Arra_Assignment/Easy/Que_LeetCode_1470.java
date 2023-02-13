@@ -11,7 +11,7 @@ public class Que_LeetCode_1470 {
         int[] arr = {1,2,3,4,4,3,2,1};
 
         System.out.print("Generate Array = ");
-        int[] ans = ShuffleArray(arr,);
+        int[] ans = ShuffleArray(arr,4);
         System.out.println(Arrays.toString(ans));
     }
     /*
