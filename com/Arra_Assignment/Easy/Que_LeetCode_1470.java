@@ -22,6 +22,7 @@ public class Que_LeetCode_1470 {
         Example 2 = Input: nums = [1,2,3,4,4,3,2,1], n = 4
                     Output: [1,4,2,3,3,2,4,1]
      */
+
     static int[] ShuffleArray(int[] nums, int n){
         int[] ans = new int[2*n];
         int j = 0;
