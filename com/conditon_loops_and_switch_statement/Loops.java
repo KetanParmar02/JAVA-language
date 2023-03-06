@@ -31,6 +31,13 @@ public class Loops {
 
         System.out.println("*******************************************************************");
 
+        System.out.print("Enter Number = ");
+        int n1 = in.nextInt();
+        for (int i = 1; i <= 10; i++) {
+            System.out.println((n1)+" * "+(i)+" = "+(n1)*(i));
+        }
+        System.out.println("*******************************************************************");
+
         /*
         while loop syntax:-
 
@@ -51,6 +58,16 @@ public class Loops {
 
         System.out.println("*******************************************************************");
 
+        System.out.print("Enter number = ");
+        int n2 = in.nextInt();
+
+        int i2 = 1;
+        while (i2 <= 10){
+            System.out.println((n2) + " * " +(i2)+" = "+(n2)*(i2));
+            i2++;
+        }
+        System.out.println("*******************************************************************");
+
         /*
         do-while loop syntax:-
 
@@ -68,5 +85,16 @@ public class Loops {
             System.out.println((num2)+"*"+(j)+"="+(num2)*(j));
             j++;
         }while (j <= 10);
+
+        System.out.println("*******************************************************************");
+
+        System.out.print("Enter number = ");
+        int n3 = in.nextInt();
+
+        int i3 = 1;
+        do {
+            System.out.println((n3)+" * "+(i3) + " = " + (n3)*(i3));
+            i3++;
+        }while (i3 <= 10);
     }
 }
