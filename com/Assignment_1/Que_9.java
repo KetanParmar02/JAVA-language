@@ -25,6 +25,7 @@ public class Que_9 {
                 ++digits;
             }
 
+            // here why i am assign originalNumber == number because in last digits count operation originalNumber is equal to the last digit of the number that's why i am reassign the number to the originalNumber..
             originalNumber = number;
 
             // result contains sum of nth power of its digits
