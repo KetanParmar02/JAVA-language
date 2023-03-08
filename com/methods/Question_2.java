@@ -8,8 +8,12 @@ public class Question_2 {
         System.out.print("Enter number= ");
         int num = in.nextInt();
 
-        boolean ans = isArmstrong(num);
+        boolean ans = isArmstrong1(num);
         System.out.println(ans);
+
+        // here String.valueOf(num).length() -> this will return the how many digit in the number
+        // here number is converting integer to string
+        System.out.println(String.valueOf(num).length());
 
         System.out.print("The 100 to 1000 between total Armstrong number= ");
         for (int i = 100; i < 10000; i++) {
@@ -38,6 +42,18 @@ public class Question_2 {
         return false;
 
          */
+    }
+
+    static boolean isArmstrong1(int num){
+        int digits = String.valueOf(num).length();
+
+        double ans = 0;
+        while (num > 0){
+            int rem = num % 10;
+            ans = ans + Math.pow(rem,digits);
+            num /= 10;
+        }
+        return num == ans;
     }
 
 }
