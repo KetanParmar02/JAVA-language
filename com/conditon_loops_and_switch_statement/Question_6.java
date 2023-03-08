@@ -10,17 +10,23 @@ public class Question_6 {
         Scanner in = new Scanner(System.in);
         System.out.print("Enter number:- ");
         int num = in.nextInt();
+
+        boolean ans = isPrime(num);
+        System.out.println(ans);
+    }
+    static boolean isPrime(int num){
         int check = 2;
 
-        while (check*check <= num){
-            if (num % 2 == 0){
-                System.out.println("Not Prime..!");
-                break;
+        if (num <= 2){
+            return false;
+        }
+
+        while (check * check <= num){
+            if (num % check == 0){
+                return false;
             }
             check++;
-            if (num % 2 != 0){
-                System.out.println("Prime..!");
-            }
         }
+        return true;
     }
 }

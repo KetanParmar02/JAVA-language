@@ -11,21 +11,22 @@ public class Question_2 {
         boolean ans = isArmstrong(num);
         System.out.println(ans);
 
-        System.out.print("The 100 to 1000 between total Armstrong number= ");
-        for (int i = 100; i < 10000; i++) {
-            if (isArmstrong(i)){
-                System.out.print(i+" ");
-            }
-        }
+//        System.out.print("The 100 to 1000 between total Armstrong number= ");
+//        for (int i = 100; i < 10000; i++) {
+//            if (isArmstrong(i)){
+//                System.out.print(i+" ");
+//            }
+//        }
     }
-    static boolean isArmstrong(int num){
+
+    static boolean isArmstrong(int num) {
 
         int original = num;
         int ans = 0;
 
-        while (num > 0){
+        while (num > 0) {
             int rem = num % 10;
-            ans += rem*rem*rem;
+            ans += rem * rem * rem * rem;
             num /= 10;
         }
         return ans == original;
@@ -38,4 +39,5 @@ public class Question_2 {
 
          */
     }
+
 }
