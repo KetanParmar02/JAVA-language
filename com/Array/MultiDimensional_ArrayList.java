@@ -12,6 +12,7 @@ public class MultiDimensional_ArrayList {
         ArrayList<ArrayList<Double>> list = new ArrayList<>();
 
         // initialize the how many size of the ArrayList
+        // how many ow in the Array
         for (int i = 0; i < 3; i++) {
             list.add(new ArrayList<>());
         }

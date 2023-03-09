@@ -5,6 +5,8 @@ import java.util.Scanner;
 
 public class Question_1 {
     public static void main(String[] args) {
+
+        //swap array value question
         Scanner in = new Scanner(System.in);
 
         float[] arr = new float[5];
