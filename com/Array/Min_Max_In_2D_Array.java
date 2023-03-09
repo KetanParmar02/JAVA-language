@@ -31,6 +31,10 @@ public class Min_Max_In_2D_Array {
         int Min_value = Integer.MAX_VALUE;
         int Max_value = Integer.MIN_VALUE;
 
+        if (nums.length == 0){
+            return new int[]{-1,-1};
+        }
+
         // Min value in 2D array
         for (int row = 0; row < nums.length; row++) {
             for (int col = 0; col < nums[row].length; col++) {
