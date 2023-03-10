@@ -49,7 +49,7 @@ public class Search_In_2D_Array {
             return new int[]{-1,-1};
         }
 
-        for (int row = start; row < end; row++) {
+        for (int row = start; row <= end; row++) {
             for (int col = 0; col < nums[row].length; col++) {
                 if (nums[row][col] == target){
                     return new int[]{row,col};
