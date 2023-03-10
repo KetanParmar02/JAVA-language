@@ -25,9 +25,11 @@ public class Main {
 
         int ans = linearSearch(arr,target);
         int ans1 = linearSearch2(arr,target);
+        boolean ans2 = linearSearch3(arr,target);
 
         System.out.println("The target element at "+ans+" index.");
         System.out.println("The target element = "+ans1);
+        System.out.println("The target element present in the Array is "+ans2);
     }
 
     // if the element found in the array return index otherwise -1
@@ -65,5 +67,25 @@ public class Main {
         // hence the target not found
         // here return the Integer.MAX_VALUE because -1 may be element these reason not return -1;
         return Integer.MAX_VALUE;
+    }
+
+    // search the target element if present in the array return true otherwise false
+    static boolean linearSearch3(int[] nums, int target){
+
+        if (nums.length == 0){
+            return false;
+        }
+
+        // for loop for finding the element
+        for (int i = 0; i < nums.length; i++) {
+
+            // if condition check if the element present return true
+            if (nums[i] == target){
+                return true;
+            }
+        }
+
+        // if none of above return statement execute
+        return false;
     }
 }
