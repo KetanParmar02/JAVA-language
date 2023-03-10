@@ -24,9 +24,10 @@ public class Main {
         int target = in.nextInt();
 
         int ans = linearSearch(arr,target);
+        int ans1 = linearSearch2(arr,target);
 
         System.out.println("The target element at "+ans+" index.");
-
+        System.out.println("The target element = "+ans1);
     }
 
     // if the element found in the array return index otherwise -1
@@ -45,5 +46,24 @@ public class Main {
             }
         }
         return -1;
+    }
+
+    // search the target and return the element
+    static int linearSearch2(int[] nums, int target){
+
+        if (nums.length == 0){
+            return Integer.MAX_VALUE;
+        }
+
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i] == target){
+                return nums[i];
+            }
+        }
+
+        // this line will execute if none of the return statements above have executed
+        // hence the target not found
+        // here return the Integer.MAX_VALUE because -1 may be element these reason not return -1;
+        return Integer.MAX_VALUE;
     }
 }
